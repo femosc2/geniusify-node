@@ -71,7 +71,8 @@ const getPopPlaylist = () => {
                     // console.log(popLyrics)
                 })
                 .catch((error) => {
-                    console.log(error);
+                    console.log("error");
+                    getPopPlaylist()
                 })
             // console.log(playlist)
         })
@@ -110,6 +111,7 @@ const getRapPlaylist = () => {
                 })
                 .catch((error) => {
                     console.log("error");
+                    getRapPlaylist()
                 })
             // console.log(playlist)
         })
@@ -147,6 +149,7 @@ const getRockPlaylist = () => {
                 })
                 .catch((error) => {
                     console.log("error");
+                    getRockPlaylist();
                 })
             // console.log(playlist)
         })
@@ -185,6 +188,7 @@ const getChristmasPlaylist = () => {
                 })
                 .catch((error) => {
                     console.log("error");
+                    getChristmasPlaylist()
                 })
         })
         .catch((error) => {
